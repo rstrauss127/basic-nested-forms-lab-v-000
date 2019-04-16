@@ -12,6 +12,7 @@ class RecipesController < ApplicationController
   end
 
   def create
+    @recipe.create(recipe_params)
   end
 
   private
